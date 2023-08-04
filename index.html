@@ -1,6 +1,7 @@
 <html>
   <head>
     <script src="https://aframe.io/releases/1.4.0/aframe.min.js"></script>
+    <script src="https://rawgit.com/fernandojsg/aframe-teleport-controls/master/dist/aframe-teleport-controls.min.js"></script>
   </head>
   <body>
     <a-scene webxr="requiredFeatures: hit-test,local-floor;
@@ -9,35 +10,162 @@
     <a-scene>
 
   <!--start of wall models-->
-      <a-box position="-11 -2 -5" rotation="0 0 0" color="lightgray" 
-      height = "15" width = "12" depth = "43"></a-box>
+      <a-box repeat = "10 10 " position="-11 -2 -5" rotation="0 0 0" img src="wall2.jpg" 
+      height = "15" width = "12" depth = "43" physics = "boundingRadius: 1 mass: 1"></a-box> 
       
-      <a-box position="-25.5 -2 -5" rotation="0 90 0" color="lightgray" 
+      <a-box repeat = "10 10 " position="-25.5 -2 -5" rotation="0 90 0" img src="wall2.jpg" 
       height = "15" width = "62" depth = "1"></a-box>
       
-      <a-box position="0 -2 -36.5" rotation="0 0 0" color="lightgray" 
+      <a-box repeat = "10 10 " position="0 -2 -36.5" rotation="0 0 0" img src="wall2.jpg" 
       height = "15" width = "50" depth = "1"></a-box>
-      <a-box position="25 -2 -5" rotation="0 90 0" color="lightgray" 
+      <a-box repeat = "10 10 " position="25 -2 -5" rotation="0 90 0" img src="wall2.jpg"
       height = "5" width = "62" depth = "0.1"></a-box>
       
-      <a-box position="11 -2 -5" rotation="0 0 0" color="lightgray" 
+      <a-box repeat = "10 10 " position="11 -2 -5" rotation="0 0 0" img src="wall2.jpg" 
       height = "15" width = "12" depth = "43"></a-box>
       
-      <a-box position="0 -2 25.5" rotation="0 0 0" color="lightgray" 
+      <a-box repeat = "10 10 " position="0 -2 25.5" rotation="0 0 0" img src="wall2.jpg" 
       height = "15" width = "50" depth = "1"></a-box>
       
       <!--end of wall models-->
+      <!--corridor 1 --> 
+      <a-box  position = "-25 1.25 10" depth="0.05" height="4.5" width="3" 
+      rotation = "0 90 0" img src = "Barak.jpg" ></a-box>
       
+      <a-box  position = "-25 1.25 1" depth="0.05" height="3" width="4.5" 
+      rotation = "0 90 0" img src = "pooh.jpg" ></a-box>
+      
+      <a-box  position = "-25 1.25 -9" depth="0.05" height="3" width="3" 
+      rotation = "0 90 0" img src = "LIZ.jpg" ></a-box>
+      <a-box  position = "-25 1.25 -19" depth="0.05" height="4" width="4.5" 
+      rotation = "0 90 0" img src = "rishi.jpg" ></a-box>
+      
+        <a-box  position = "-17 1.25 10" depth="0.05" height="4.5" width="4.5" 
+      rotation = "0 90 0" img src = "Modi.jpg" ></a-box>
+      
+      <a-box  position = "-17 1.25 1" depth="0.05" height="3" width="4.5" 
+      rotation = "0 90 0" img src = "UP2.jpg" ></a-box>
+      
+      <a-box  position = "-17 1.25 -9" depth="0.05" height="3" width="4.5" 
+      rotation = "0 90 0" img src = "Truss.jpg" ></a-box>
+      <a-box  position = "-17 1.25 -19" depth="0.05" height="4" width="4.5" 
+      rotation = "0 90 0" img src = "Sanders.jpg" ></a-box>
+      <a-box  position = "-25 1.25 21" depth="0.05" height="5" width="4" 
+      rotation = "0 90 0" img src = "Justin.jpg" ></a-box>
+      
+      <a-box  position = "-25 1.25 -30" depth="0.05" height="4" width="4.5" 
+      rotation = "0 90 0" img src = "Horseboy.jpg" ></a-box>
+      <!--corridor 2 -->
       <a-box  position = "-5 1.25 10" depth="0.05" height="4.5" width="3" 
       rotation = "0 90 0" img src = "Barak.jpg" ></a-box>
-
+      
+      <a-box  position = "-5 1.25 1" depth="0.05" height="3" width="4.5" 
+      rotation = "0 90 0" img src = "Shrek.jpg" ></a-box>
+      
+      <a-box  position = "-5 1.25 -9" depth="0.05" height="3" width="4.5" 
+      rotation = "0 90 0" img src = "Banksey.jpg" ></a-box>
+      <a-box  position = "-5 1.25 -19" depth="0.05" height="4" width="4.5" 
+      rotation = "0 90 0" img src = "Griffin.jpg" ></a-box>
+      
+        <a-box  position = "5 1.25 10" depth="0.05" height="4.5" width="4.5" 
+      rotation = "0 90 0" img src = "River.jpg" ></a-box>
+      
+      <a-box  position = "5 1.25 1" depth="0.05" height="3" width="4.5" 
+      rotation = "0 90 0" img src = "TOTK.jpg" ></a-box>
+      
+      <a-box  position = "5 1.25 -9" depth="0.05" height="3" width="4.5" 
+      rotation = "0 90 0" img src = "Thorn.jpg" ></a-box>
+      <a-box  position = "5 1.25 -19" depth="0.05" height="4" width="4.5" 
+      rotation = "0 90 0" img src = "GriffinP.jpg" ></a-box>
+      
+      
+      
+      
+        <a-box  position = "17 1.25 -10" depth="0.05" height="4" width="3" 
+      rotation = "0 90 0" img src = "Morbius.jpg" ></a-box>
+      
+      <a-box  position = "17 1.25 -14" depth="0.05" height="4" width="3" 
+      rotation = "0 90 0" img src = "SS.jpg" ></a-box>
+      
+      <a-box  position = "17 1.25 -18" depth="0.05" height="4" width="3" 
+      rotation = "0 90 0" img src = "Avatar2.jpg" ></a-box>
+      
+      <a-box  position = "17 1.25 -22" depth="0.05" height="4" width="3" 
+      rotation = "0 90 0" img src = "AMATW.jpg" ></a-box>
+      
+      <a-box  position = "17 1.25 -6" depth="0.05" height="4" width="3" 
+      rotation = "0 90 0" img src = "TLJ.jpg" ></a-box>
+      
+      <a-box  position = "17 1.25 -2" depth="0.05" height="4" width="3" 
+      rotation = "0 90 0" img src = "Halloween.jpeg" ></a-box>
+      
+      
+      
+      <a-box  position = "17 1.25 2" depth="0.05" height="4" width="3" 
+      rotation = "0 90 0" img src = "Avatar2.jpg" ></a-box>
+      
+      <a-box  position = "17 1.25 6" depth="0.05" height="4" width="3" 
+      rotation = "0 90 0" img src = "AMATW.jpg" ></a-box>
+      
+      <a-box  position = "17 1.25 10" depth="0.05" height="4" width="3" 
+      rotation = "0 90 0" img src = "TLJ.jpg" ></a-box>
+      
+      <a-box  position = "17 1.25 14" depth="0.05" height="4" width="3" 
+      rotation = "0 90 0" img src = "Halloween.jpeg" ></a-box>
+      
+      
+      
+      <!--Tjunction north-->
+      <a-text value="Political leaders        Movies and Planeterium!" position = "-4 3 -35.9" 
+      width = "10" height = 20
+       color = black ></a-text>
+            <a-box  position = "-17 1.25 -36" depth="0.05" height="5" width="3.7" 
+      rotation = "0 0 0" img src = "Stairs.jpg" ></a-box>
+      <a-box  position = "2 1.25 -35.9" depth="0.05" height="2" width="3.7" 
+      rotation = "0 0 0" img src = "arrow.jpg" ></a-box>
+            <a-box  position = "-2 1.25 -35.9" depth="0.01" height="2" width="3.7" 
+      rotation = "180 0 0" img src = "arrow.jpg" ></a-box>
+        <a-box  position = "-9 1.25 -36" depth="0.01" height="4.5" width="5" 
+      rotation = "0 0 0" img src = "Zipline.jpg" ></a-box>
+      
+      <a-box  position = "10 1.25 -36" depth="0.05" height="4.5" width="3" 
+      rotation = "0 0 0" img src = "EEAAO.jpeg" ></a-box>
+      
+      <a-box  position = "16 1.25 -36" depth="0.05" height="4.5" width="3" 
+      rotation = "0 0 0" img src = "Avatar.jpg" ></a-box>
+       <a-box  position = "22 1.25 -36" depth="0.05" height="4.5" width="3" 
+      rotation = "0 0 0" img src = "TSS.jpg" ></a-box>
+      <a-box  position = "8 1.25 -26.5" depth="0.05" height="4.5" width="3" 
+      rotation = "0 0 0" img src = "US.jpg" ></a-box>
+      <a-box  position = "14 1.25 -26.5" depth="0.05" height="4.5" width="3" 
+      rotation = "0 0 0" img src = "boom.jpg" ></a-box>
+      <a-box  position = "-11 1.25 -26.5" depth="0.05" height="4.5" width="4.5" 
+      rotation = "0 0 0" img src = "DonaldT.jpg" ></a-box>
+      <a-plane repeat = "20 20" position="0 -1.7 -5" rotation="-90 90 90" width="50" height="62" img src="Wood.jpg"></a-plane>
+      <a-plane repeat = "20 20" position="0 5 -5" rotation="90 0 180" width="50" height="62" img src = "ceiling.jpg" color = white ></a-plane>
+      <a-sky repeat ="2 2" img src = "Starrs.jpg"></a-sky>
+      
+            <!--Tjunction south-->
+            <a-box  position = "-19 1.25 25" depth="0.05" height="5" width="3.7" 
+      rotation = "0 0 0" img src = "Donaldd.jpg" ></a-box>
+      
+        <a-box  position = "-9 1.25 25" depth="0.05" height="4.5" width="3" 
+      rotation = "0 0 0" img src = "Che.jpg" ></a-box>
+             <a-box  position = "-11 1.25 16.5" depth="0.05" height="4.5" width="7" 
+      rotation = "0 0 0" img src = "Disney.jpg" ></a-box>
+      <a-box  position = "9 1.25 25" depth="0.05" height="3" width="4.5" 
+      rotation = "0 0 0" img src = "TOTK.jpg" ></a-box>
+      
+      <a-box  position = "16 1.25 25" depth="0.05" height="3" width="4.5" 
+      rotation = "0 0 0" img src = "Thorn.jpg" ></a-box>
+      <a-box  position = "11 1.25 16.5" depth="0.05" height="4" width="4.5" 
+      rotation = "0 0 0" img src = "GriffinP.jpg" ></a-box>
       
       <a-plane repeat = "20 20" position="0 -1.7 -5" rotation="-90 90 90" width="50" height="62" img src="Wood.jpg"></a-plane>
-      <a-plane position="0 5 -5" rotation="90 0 180" width="50" height="62" color = "blue"></a-plane>
-      <a-sky color="green"></a-sky>
+    
+      <a-sky repeat ="2 2" img src = "Starrs.jpg"></a-sky>
       
-      
-      
+      <a-text value="Created by Owen McGowan!" position = "0 20 0" width = "50" height = 20 animation="property: rotation; to: 0 360 0; loop: true; dur: 10000"></a-text>
       <a-sphere position = "80 10 -10" color="yellow" radius="10"></a-sphere>
       <a-torus position = "80 10 -10" color="#43A367" arc="360" radius="15" width = " 7 " radius-tubular="1" animation="property: rotation; to: 360 360 360; loop: true; dur: 10000">></a-torus>
       
